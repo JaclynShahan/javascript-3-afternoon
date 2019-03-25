@@ -51,7 +51,9 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater() {
 
+  }
 
 
 ////////// PROBLEM 2 //////////
@@ -69,6 +71,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+let removeDuplicates = (arr) => {
+  let newArr = []
+  for (let i = 0; i < arr.length; i++) {
+    if (newArr.indexOf(arr[i]) == -1) {
+      newArr.push(arr[i]);
+    }
+  }
+
+  return newArr
+}
 
 
 
@@ -97,7 +109,7 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
+var grumpyActivity = cat.slice(catFriends.activities[1]);
 var fluffy2ndFriend;
 
 
@@ -139,7 +151,11 @@ var myCar = {
 */
 
 //Code Here
+function recordCleaner() {
+  for (let i = 0; arr < arr.length; i++) {
 
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
