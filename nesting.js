@@ -52,10 +52,17 @@ var employees = [
 
 //Code Here
 function employeeUpdater() {
+  let newArr = employees.filter((employee) => employee.firstName !== 'Theo' ) 
 
-  }
 
-
+  return newArr.map((employee) => {
+      if (employee.firstName == 'Lorie') {
+        employee.department = 'HR'
+        return employee
+      }
+      return employee
+  });
+}
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -109,7 +116,7 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity = cat.slice(catFriends.activities[1]);
+var grumpyActivity ;
 var fluffy2ndFriend;
 
 
@@ -151,10 +158,15 @@ var myCar = {
 */
 
 //Code Here
-function recordCleaner() {
-  for (let i = 0; arr < arr.length; i++) {
-
-  }
+let recordCleaner = () => {
+  let newArr = myCar.accidents.map((accident) => {
+    if (accident.atFaultForAccident === true) {
+      accident.atFaultForAccident = false
+      return accident
+    }
+    return accident
+  })
+  myCar.accidents = newArr;
 }
 
 
@@ -175,4 +187,15 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
+function looper() {
+  let newArr = [];
+  for (let i = 0; i < numsArr.length; i += 1) {
+    let val = numsArr[i];
+    if (val % 2 === 0) {
+      newArr.push('even');
+    } else {
+      newArr.push('odd');
+    }
+  }
+}
 
