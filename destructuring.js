@@ -115,8 +115,13 @@ return Math.min(first, second, third)
 //Code Here
 
 numberGroups = ({a, b, c}) => {
-arrOne = obj.length[a];
-arrTwo = obj.length[b];
-arrThree = obj.length[c];
-return Math.max(obj.arrOne, obj.arrTwo, obj.arrThree)
+if (a.length > b.length && a.length > c.length) {
+  return a
+} else if (b.length > a.length && b.length > c.length) {
+  return b
+} else if (c.length > a.length && c.length > b.length) {
+  return c
+} else {
+  return undefined
+}
 }
